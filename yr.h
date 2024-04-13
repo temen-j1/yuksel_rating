@@ -336,6 +336,11 @@ double yuksel_rating_elo_win_probability_to_rating(double p, double r_a){
 }
 
 void yuksel_rating_rating_window(double *r_star0, double *r_star1, const yuksel_player *a, int n, double lambda){
+	if(n < 0){
+		*r_star0 = a->r;
+		*r_star1 = a->r;
+		return;
+	}
 	double np1 = (double)(n + 1);
 	double p = (lambda * (np1 + a->m) - a->w) / np1;
 	double delta_p = 1.0 / (np1 + a->m);
