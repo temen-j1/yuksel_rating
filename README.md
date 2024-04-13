@@ -4,7 +4,7 @@ I am in no way associated with Cem Yuksel nor their works.
 
 ## Building
 This is a single-header library, which means you `#define YUKSEL_RATING_IMPLEMENTATION` in your desired file / translation unit before including `yr.h`.
-You can also make use of `yr.c` if you want your own standalone translation unit.
+You can also make use of `yr.c` if you want your own standalone translation unit. Should work in C/C++.
 
 ## Dependencies
 This code depends on `math.h` and `float.h`.
