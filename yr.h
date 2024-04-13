@@ -168,7 +168,7 @@ void yuksel_rating_player_init_from_party(yuksel_player *out, yuksel_player *in,
 	out->w = 0.0;
 	out->m = 0.0;
 
-	if(player_count < 0 || n < 0)
+	if(player_count < 1 || n < 0)
 		return;
 
 	double N = (double)n;
