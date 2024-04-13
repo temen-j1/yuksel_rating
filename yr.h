@@ -180,7 +180,7 @@ void yuksel_rating_player_init_from_party(yuksel_player *out, yuksel_player *in,
 		out->V += in[i].V;
 		out->D += in[i].D;
 		double m = in[i].m > N ? N : in[i].m;
-		double w = in[i].w > m ? m : w;
+		double w = in[i].w > m ? m : in[i].w;
 		out->w += w;
 		out->m += m;
 	}
